@@ -7,3 +7,38 @@ h1 {
 img {
     width: 50%;
 }
+
+.menutren {
+	background-color: rgb(110, 157, 187);
+	height: 30px;
+	width: 100%;
+}
+
+ul.menungang {
+	list-style: none;
+	width: 1400px;
+	margin-left: auto;
+}
+
+ul.menungang li {
+	display: inline;
+}
+
+.menungang a {
+    color: #d9e3ea;
+    text-decoration: none;
+    font-family: segoe ui;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.menungang a:hover {
+    background-color: rgb(167, 176, 183);
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
