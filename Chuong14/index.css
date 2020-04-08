@@ -1,0 +1,133 @@
+*{margin: 0; padding: 0;}
+
+:root {
+    --font1: "Oswald" , sans-serif;
+    --size1: 48px;
+    --lineheight1: 59px;
+    --font2: 'Amiri', serif;
+    --size2: 17px;
+    --color2: #666;
+    --size3: 22px;
+}
+
+.banner_top{
+    background: url(http://belton.tommusdemos.wpengine.com/wp-content/uploads/sites/82/2018/04/fullscreen03.jpg) top center;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed; v
+}
+
+.banner_top:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image:-webkit-linear-gradient(left, #0000000f 0%, #0000ff00 50%, #0000001a 100%) ;
+}
+.banner_top ._3cot{
+    display: flex;
+    position: absolute; /* để nó trở thành layer và nằm trên div den, không bị che */
+    width: 100%;
+}
+.banner_top ._3cot ._1cot{
+    width: 33.33%;
+}
+.banner_top ._3cot ._1cot.cottrai{} /* 2 class cùng nhau chỉ viết dấu . liên nhau, không có dấu cách */
+.banner_top ._3cot ._1cot.cottrai a{
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    padding: 20px 30px;
+} 
+.banner_top ._3cot ._1cot.cottrai a:hover{
+    color:#0345bf;
+} 
+
+.banner_top ._3cot ._1cot.cotphai{
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+} 
+
+.banner_top ._3cot ._1cot.cotphai a{
+    color: white;
+    font-size: 25px;
+    padding: 15px 15px;
+    display: inline-block;
+} 
+
+.banner_top ._3cot ._1cot.cotgiua{
+    text-align: center;  /* căn chỉnh trái phải giữa */
+} 
+.banner_top ._3cot ._1cot.cotgiua img{
+    height: 40px;
+    padding-top: 20px;
+} 
+/* end 3 cột */
+.text_banner{
+    position: absolute; width: 100%;
+    top: 50%;
+    color: white;
+    display: block;
+}
+
+.text_banner .content{
+    width: 1170px; margin: auto; 
+}
+
+.text_banner .content .small{}
+
+.text_banner .content .h1{
+    font-family: var(--font1);
+    font-size: var(--size1);
+    line-height: var(--lineheight1);
+    color: white;
+    width: 50%;
+}
+
+/* end css  top */
+.content1 {
+    width: 1170px;margin: auto;
+    padding: 80px 0;
+    display: flex;
+    font-family: var(--font2);
+    font-size: var(--size2);
+    color: var(--color2);
+}
+.content1 .left{
+    width: 35%;
+}
+.content1 .left span{}
+.content1 .left h2{
+    font-family: var(--font2);
+    font-size: var(--size3);
+    width: 60%;
+}
+.content1 .right{
+    width: 65%;
+}
+.content1 .right p{
+    line-height: 20px;
+    margin-top: 15px;
+}
+.content1 .right a{
+    margin-top: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: var(--size2);
+    color: var(--color2);
+    transition:0.4s ;
+}
+
+.content1 .right a:before {
+    content:"\f178";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: relative;
+    left: -15px;
+    transition: 0.4s;
+}
+
+.content1 .right a:hover:before {
+    left: 0px;
+}
