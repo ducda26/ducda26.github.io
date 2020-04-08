@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0;}
+
+.banner {
+	height: 100px;
+	background: url(banner-kenh14.png) no-repeat center;
+	background-size: cover;
+}
+
+.menu a {
+    color: white;
+    padding: 0 27px;
+    text-transform: uppercase;
+}
+
+.menu {
+    height: 50px;
+    line-height: 50px;
+    background: #9f1d21;
+}
+
+.menu.menuden {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0px;
+	background: #1d1d1d;
+}
+
+.chungtoi.vangdunglai {
+    position: fixed;
+    top: 49px;
+}
