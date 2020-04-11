@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.nutslide {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+}
+
+.nutslide li {
+    list-style: none;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background: gray;
+    border-radius: 50%;
+    text-indent: -9999px; /*ẩn chữ đi*/
+    cursor: pointer;
+    transition: 0.4s;
+    border: 1px solid white;
+}
+
+.nutslide li.xanh {
+    background: lightblue;
+    border: 1px solid gray;
+}
+
+.nutslide li:hover {
+    background: black;
+}
+
+.next {
+    position: absolute;
+    top: 33%;
+    right: 0;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.prev {
+    position: absolute;
+    z-index: 4;
+    top: 33%;
+    left: 0;
+    cursor: pointer;
+}
+
+.anhslide {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    text-align: center;
+}
+
+header.apple {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+/*viết cho hiệu ứng*/
+._1slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+._1slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+._1slide.sangbentrai {
+    animation: sangbentrai 1s forwards;
+}
+@-webkit-keyframes sangbentrai {
+    0% {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+._1slide.sangbenphai {
+    animation: sangbenphai 1s forwards;
+}
+@-webkit-keyframes sangbenphai {
+    0% {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+._1slide.vaobenphai {
+    animation: vaobenphai 1s forwards;
+}
+@-webkit-keyframes vaobenphai {
+    0% {
+        left: 100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+._1slide.vaobentrai {
+    animation: vaobentrai 1s forwards;
+}
+@-webkit-keyframes vaobentrai {
+    0% {
+        left: -100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        left: 0%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
